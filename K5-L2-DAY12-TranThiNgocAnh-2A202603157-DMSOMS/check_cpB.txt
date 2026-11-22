@@ -1,0 +1,9 @@
+File: export_final.zip · chỉ kiểm ảnh: D01, D02
+Ảnh: 2 · đã có frame_meta: 2 · số đối tượng: face=2, face13=2, hand=4, person=2
+  [WARN] D02.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+Kết quả: 0 lỗi, 1 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Ghi chú
+- Kiểm hồi cứu Checkpoint B trên bản nộp sau chỉnh sửa, phạm vi D01 và D02.
+- Áp dụng cập nhật của Lab Coach cho phép child_seat.occupied=yes khi thấy rõ có người trong ghế.
+- D02, mắt trái (§4.5–4.6). Bản gán ghi unknown và cả bốn mốc mắt trái có occluded=0, outside=0. Cần xem riêng độ rõ của khe mắt và từng mốc trên CVAT. Mắt phải có bốn mốc occluded=1 và được ghi unknown.

@@ -1,0 +1,13 @@
+File: export_final.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=12, face=8, face13=6, hand=11, infant_seat=10, object=8, person=18
+  [WARN] D02.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D04.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D06.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+Kết quả: 0 lỗi, 3 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Ghi chú
+- Kiểm toàn bộ bản nộp sau chỉnh sửa. Ba ghi chú dưới đây mô tả căn cứ trong XML và phần cần xác nhận trên ảnh.
+- Áp dụng cập nhật của Lab Coach cho phép child_seat.occupied=yes khi thấy rõ có người trong ghế.
+- D02, mắt trái (§4.5–4.6). Bản gán ghi unknown và cả bốn mốc mắt trái có occluded=0, outside=0. Cần xem riêng độ rõ của khe mắt và từng mốc trên CVAT. Mắt phải có bốn mốc occluded=1 và được ghi unknown.
+- D04, mắt trái (§4.5–4.6). Bản gán ghi unknown và cả bốn mốc mắt trái có occluded=0, outside=0. Cần kiểm mắt trái riêng. Mắt phải có bốn mốc outside=1 và đã được cập nhật thành unknown sau đối chiếu.
+- D06, mắt phải (§4.5–4.6). Bản gán ghi unknown và cả bốn mốc mắt phải có occluded=0, outside=0. Cần kiểm trực tiếp khe mắt phải và khả năng định vị từng mốc trên CVAT.
