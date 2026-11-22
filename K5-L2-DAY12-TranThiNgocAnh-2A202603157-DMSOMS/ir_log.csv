@@ -1,0 +1,6 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_rgb,IR_sim,"Ở cặp S01, bản Ánh ghi unknown trên RGB và no trên IR-sim cho lòng ghế trẻ em rear_right.",child_seat.occupied,"Nhãn thay đổi giữa hai ảnh. Cần kiểm riêng độ rõ của lòng ghế trên CVAT để xác nhận vì sao."
+S07_ir,IR_sim,"Vật ở rear_right giữ cùng nhãn box trên RGB và IR-sim của cảnh S07.",object.type,"Nhãn loại vật được giữ trong cặp ảnh. Cần xem hình dạng trên CVAT để xác nhận căn cứ."
+D01,real_IR,"Cùng một khung NIR, mắt trái ghi open, mắt phải unknown và bốn điểm mắt phải có occluded=1.",face.eye_right,"Nhãn cho thấy hai mắt được xử lý riêng. Export chưa xác định nguyên nhân che khuất."
+D02,real_IR,"Bốn điểm mắt phải có occluded=1. Mắt phải được ghi unknown dù thuộc tính kính được ghi clear.",face.eye_right,"Nhãn kính vẫn có giá trị cụ thể khi trường trạng thái mắt chưa xác định được. Cần xem CVAT để xác nhận dấu hiệu che."
+D04,real_IR,"Bốn điểm mắt phải đều outside trong cả hai lần xuất. Trạng thái mắt phải đổi từ open sang unknown ở v2.",face.eye_right,"Trạng thái mắt ở v2 khớp với việc bản gán không định vị được bốn điểm. Khả năng thấy khe mắt cần kiểm trực tiếp trên CVAT."
